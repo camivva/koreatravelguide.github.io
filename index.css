@@ -1,0 +1,249 @@
+
+body{
+  background-color: #F8F8FF;
+}
+
+header {
+  height: 200vh;
+}
+
+.container {
+  /* hide fixed overflow contents */
+  clip: rect(0, auto, auto, 0);
+
+  /* does not work if overflow = visible */
+  overflow: hidden;
+
+  /* only works with absolute positioning */
+  position: absolute;
+
+  /* Make sure containers are full-width and height */
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  
+  
+  /* safari hack */
+  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+}
+
+.container_solid {
+  background: white;
+  
+  /* position this container at the top of its parent element */
+  top: 0;
+}
+
+.title_wrapper {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.title_wrapper h1 {
+  text-align: center;
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Century Gothic', serif;
+  font-weight: 900;
+}
+
+.sub_title h3 {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Century Gothic', serif;
+    font-weight: 900;  
+}
+
+.container_solid .title_wrapper h1 {
+  /* the text background */
+  background: url(Media/intro8.jpg);
+  background-size: 100vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+}
+
+.container_image {
+  /* Grab a free image from unsplash */
+  background-image: url(Media/intro7.jpg);
+  background-size:100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+  
+  /* position the second container below the first container */
+  top: 100vh;
+}
+
+.container_image .title_wrapper h1 {
+  color: rgb(255, 255, 255);
+}
+
+
+section {
+  min-height: 100vh;
+  padding: 2em;
+  margin: auto;
+  max-width: 800px;
+}
+
+section h2 {
+  font-family: 'Ink Free', serif;
+}
+
+section p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+
+
+.fancy {
+    --b: 4px;   /* control the border thickness */
+    --w: 100px;  /* control the width of the line*/
+    --g: 5px;  /* control the gap */
+    --c: #ffffff;
+   
+    width: fit-content;
+    padding: 0 1em;
+    
+    
+    color: #000000;
+    font-size: 26px;
+    font-family: 'Ink Free', Segoe UI;
+    border-image: 
+       linear-gradient(
+         #0000      calc(50% - var(--b)/2),
+         var(--c) 0 calc(50% + var(--b)/2),
+         #0000    0) 
+      1/0 var(--w)/calc(var(--w) + var(--g));
+    margin-inline: auto;
+  }
+  
+  
+  h1 {
+    font-family: 'Calibri Light', Segoe UI;
+    font-size: 2.0rem;
+  }
+
+
+  
+  section p {
+    font-family: 'Calibri Light', Segoe UI;
+    font-size: 18px;
+    color: rgb(62, 56, 56);
+  }
+
+  section ul {
+    font-family: 'Calibri Light', Segoe UI;
+    font-size: 18px;
+    color: rgb(62, 56, 56);
+  }
+
+
+
+
+
+
+
+
+
+/* Icons */
+
+/*Travel icon*/
+.travel_icon{
+    position: absolute;
+    bottom: -94vw;
+    left: 23vw;
+ } 
+
+ .travel_title{
+    position: absolute;
+    bottom: -94vw;
+    left: 26vw;
+    font-size: 19px;
+    color: #de6a6a;
+    font-family: 'Calibri Light', serif;
+    font-size: 21px;
+ }
+
+ /*Explore icon*/
+ .explore_icon{
+    position: absolute;
+    bottom: -94vw;
+    left: 41vw;
+ } 
+
+ .explore_title{
+    position: absolute;
+    bottom: -94vw;
+    left: 46vw;
+    font-size: 20px;
+    color: #de6a6a;
+    font-family: 'Calibri Light', serif;
+ }
+
+  /*Tips icon*/
+  .tips_icon{
+    position: absolute;
+    bottom: -94vw;
+    left: 58vw;
+ } 
+
+ .tips_title{
+    position: absolute;
+    bottom: -94vw;
+    left: 63vw;
+    font-size: 20px;
+    color: #de6a6a;
+    font-family: 'Calibri Light', serif;
+ }
+
+
+
+
+
+
+
+ 
+ body{
+  margin:0;
+  overflow-x:hidden;
+  }
+  
+  .footer{
+  background:		#F0F0F0;
+  font-size: 15px;
+  color: 	#404040;
+  padding:30px 0px;
+  font-family: 'Calibri Light', sans-serif;
+  text-align:center;
+  }
+
+
+
+
+
+
+
+
+
+
+ 
+  
+  
